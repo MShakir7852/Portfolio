@@ -1,0 +1,153 @@
+.theme-light {
+    --background-color: white;
+    --heading: red;
+    --para: black;
+    --borders: black;
+  }
+  
+  .theme-dark {
+    --background-color: black;
+    --heading: yellow;
+    --para: white;
+    --borders: white;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--borders);
+  }
+  .logContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 200px;
+
+  }
+  .HomePage{
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--background-color);
+  }
+  .Content{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    background-color: Black;
+    border-radius: 20px;
+    flex-basis: 30%;
+    padding: 100px 200px;
+    box-shadow: -5px -5 5px black;
+    background-image: url(./Media/WhatsApp\ Image\ 2024-10-22\ at\ 16.41.51_ec4cbc11.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .contents{
+    width: 50%;
+    height: 400px;
+    padding: 5px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .contents h1{
+    color: darkorange;
+    font-weight: bold;
+    font-size: 50px;
+  }
+  .contents h2{
+    color: var(--para);
+    font-weight: bold;
+    text-align: left;
+    font-size: 40px;
+  }
+  .contents p{
+    font-size: 25px;
+  }
+  .row{
+    justify-content: center;
+
+  }
+  .nav{
+    height: 300px;
+    width: 10%;
+    position: fixed;
+    right: 0;
+    top: 100px;
+  }
+  .nav ul{
+    list-style: none;
+    gap: 60px;
+    transition: all 2s;
+  }
+  .nav ul li a::before {
+    content: '';
+    height: 100%;
+    width: 150px;
+    position: absolute;
+    background-color:gold;
+    right: 3px;
+    top: 0.5px;
+    border-radius: 50px;
+    display: block; 
+    opacity: 0; 
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+  }
+
+.nav ul li a:hover::before {
+    transform: translateX(-5px); /* Move background */
+    opacity: 1; /* Make it visible */
+    z-index: -1;
+}
+
+  .nav ul li a{
+    color: black;
+    font-size: 30px;
+    background-color:rgb(156, 156, 156);
+    padding: 10px 15px;
+    border-radius: 50%;
+    line-height: 4.5rem;
+    text-align: center;
+    /* transition: all 2s; */
+    position: relative;
+  }
+  .nav ul li a:hover{
+    color: white;
+    background-color: gold;
+  }
+  .aboutbtn::after{
+    content: '';
+    height: 40px;
+    width: 50px;
+    background-color: gold;
+    position: absolute;
+    top:360px;
+    margin-left: 250px;
+    border-radius: 50px;
+  }
+  .aboutbtn{
+    height: 40px;
+    width:300px ;
+    border-radius: 50px;
+    border: 2px solid gold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    overflow: hidden;
+  }
+  
+  .aboutbtn button{
+    border: none;
+    padding: 5px 20px;
+
+  }
+  
+
+  
+  
+
+  

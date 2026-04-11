@@ -1,0 +1,499 @@
+.theme-light {
+    --background-color: white;
+    --heading:Black ;
+    --para: black;
+    --borders: black;
+  }
+  
+  .theme-dark {
+    --background-color: black;
+    --heading: white;
+    --para: white;
+    --borders: white;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Rowdies", sans-serif;
+    background-color: var(--background-color);
+}
+
+.HomePage {
+    background-color: var(--background-color);
+    padding: 20px;
+}
+
+.Content {
+    background-color:var(--background-color);
+    height: 400px;
+    width: 20%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px  black;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+.Content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px var(--background-color);
+}
+.sid {
+    height: 100vh;
+    background-color:  gold;
+    width: 50%;
+    transform: skewX(20deg );
+    margin-left:-300px;
+    position: relative;
+}
+
+
+.contents {
+    height: 400px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+}
+
+.contents h1 {
+    color: Gold;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Rammetto One", sans-serif;
+    text-shadow: 2px 2px 4px  var(--background-color);
+    
+}
+
+.contents h2,p {
+    margin-bottom: 10px;
+    color:var(--para);
+}
+
+.row {
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+.contents .aboutbtn {
+    width: 250px;
+    background-color:  var(--background-color);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 8px var(--background-color);
+    cursor: pointer;
+    border: 1px solid var(--borders);
+    transition: background-color 0.7s ease, box-shadow 0.6s ease;
+}
+
+
+.contents .aboutbtn:hover {
+    background-color: gold;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.7s ease, box-shadow 0.6s ease;
+}
+
+.contents .aboutbtn button {
+    padding: 10px 20px;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    color:var(--para);
+    cursor: pointer;
+    transition: background-color 0.7s ease, box-shadow 0.6s ease;
+
+}
+
+.contents .aboutbtn button:hover {
+    color: var(--para);
+    z-index: 1;
+}
+
+.Icon {
+   color: var(--para);
+}
+
+
+.contents .aboutbtn::after {
+    background-color:var(--background-color);
+    content: "More About Me";
+    font-weight: bold;
+    font-size: 16px;
+    color:var(--para);
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    right: 45px;
+    border-radius: 20px 0px 0px 20px;
+    transition: width 0.3s ease, height 0.3s ease, transform 0.3s ease;
+    display: none;
+}
+
+.contents .aboutbtn:hover::after {
+    width: 200px;
+    height: 100px;
+    transform: translateX(-1px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 3s ease;
+    background-color: Gold;
+}
+.contents .aboutbtn:hover .contents .aboutbtn button{
+    position: relative;
+    z-index: 11;
+    color:var(--para);
+    background-color: gold;
+   
+}
+.NavBar {
+    position: fixed; /* Fixes the position of the nav bar */
+    top: 0;
+    right: 20px; /* Positions it on the right side */
+    height: 100vh; /* Makes the nav bar full height */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20px;
+    z-index: 10;
+}
+
+.NavBar ul {
+    list-style-type: none; /* Removes bullet points from list */
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    align-items: flex-end; /* Aligns items to the right */
+    padding: 0;
+    margin-bottom: 80px;
+    position: absolute;
+    top: 1;
+    gap: 30px;
+}
+.icon{
+    font-size: 20px;
+    text-align: center;
+}
+
+.NavBar li {
+    margin: 10px 0; /* Spacing between links */
+}
+
+.NavBar a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+    padding: 16px 18px;
+    background-color: rgb(203, 199, 199);
+    border-radius: 50%;
+}
+
+.NavBar a:hover {
+    color: white; /* Hover effect */
+    background-color: gold;
+    font-family: "Rammetto One", sans-serif;
+    /* padding: 0; */
+
+}
+.Heading-Text{
+    text-align: center;
+    position: relative;
+    color: var(--heading);
+    font-family: "Rammetto One", sans-serif;
+    width: 100%;
+    margin: auto;
+    
+    
+  
+}
+.Heading-Text h1{
+    opacity: 0.1;
+    padding: 10px 0px;
+    font-size: 70px;
+    font-weight: 1400;
+    letter-spacing: 20px;
+    color: var(--heading);
+    font-family: "Rammetto One", sans-serif;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.Heading-Text h2{
+    padding: 10px 0px;
+    font-size: 30px;
+    font-weight: 600px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: var(--heading);
+    font-family: "Rammetto One", sans-serif;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+}
+.main-content h3{
+    color: var(--heading);
+    font-size: 40px;
+    font-weight: bold;
+}
+.text{
+    color: var(--para);
+}
+.me{
+    color: gold;
+}
+.main-content{
+    height: 600px;
+    width: 100%;
+    background-color: var(--background-color);
+    gap:40px;
+    
+
+}
+.main-content-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: auto;
+
+}
+.main-content .box{
+    height: 400px;
+    width: 35%;
+    padding: 20px 10px;
+}
+.box-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 40px;
+    color: var(--para);
+    
+}
+.box-content ul{
+    list-style: none;
+   
+}
+.list-unstyled{
+    display: flex;
+    justify-content: center;
+    text-align:center ;
+    /* align-items: start; */
+    /* align-items: start; */
+    flex-direction: column;
+    margin: auto;
+}
+.box h1{
+text-transform: uppercase;
+padding: 10px 20px;
+color: var(--para);
+}
+.card
+{
+    height: 200px;
+    padding: 10px 25px;
+    border: 1px solid var(--borders);
+    background-color: var(--background-color);
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+.card h1{
+    color: gold;
+
+}
+.picture .card{
+    background-color: var(--background-color);
+}
+.skills {
+   background-color: var(--background-color);
+   width: 100%;
+   height: auto;
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   justify-items: center;
+   padding: 10px 0px;
+
+}
+
+
+.border123{
+    border: 9px solid rgb(191, 189, 189);
+     border-right: 9px solid gold;
+    border-bottom: 9px solid gold;
+    /* border-top: 9px solid rgb(13, 230, 13);  */
+    background-color: var(--background-color);
+   border-radius: 50%;
+   height: 150px;
+   width: 150px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+  
+}
+.picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    height: auto;
+    /* margin: auto; */
+    background-color: var(--background-color);
+    padding: 10px 40px;
+}
+.Ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+}
+.Ul li{
+    list-style: none;
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 20px;
+    color: var(--heading);
+    background-color: var(--background-color);
+    transition: all 0.3s;
+    font-family: "Rammetto One", sans-serif;
+}
+.Ul li:hover{
+    color: gold;
+    cursor: pointer;
+}
+.Detail{
+    height: auto;
+    text-align: start;
+    /* font-weight: bold; */
+    font-size: 16px;
+}
+.row{
+    height: auto;
+    width: 100%;
+    padding: 20px 0px;
+}
+.NavBar .toggle{
+    position: relative;
+    right: 0;
+    top: 0;
+    margin-right: 10px;
+    background-color: rgb(203, 199, 199);
+
+}
+.container-fluid {
+    background-color: var(--background-color);
+    /* border-radius: 20px; */
+}
+.portfolio{
+    background-color: var(--background-color);
+    height: 600px;
+}
+.portfolio h1{
+    font-family: "Rammetto One", sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: var(--heading);
+    padding: 20px 0px;
+    
+}
+
+.Blog{
+    background-color: var(--background-color);
+}
+.Blog h1{
+    font-family: "Rammetto One", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--heading);
+
+}
+.row .card{
+    background-color: var(--background-color);
+    border: 1px solid var(--para);
+}
+.Detail h5{
+    color: var(--heading);
+}
+.Form label{
+    color: var(--heading);
+}
+.heading{
+    color: var(--heading);
+    font-family: "Rammetto One", sans-serif;
+    font-size: 40px;
+
+}
+.social-media a{
+    padding: 10px 10px;
+    border-radius: 50%;
+    /* color:transparent; */
+    transition: all 0.2s;
+}
+.social-media a:hover{
+    background-color: gold;
+    /* color: var(--heading); */
+
+}
+.submit-btn{
+    border: 1px solid gold;
+    /* background-color: none; */
+}
+.submit-btn:hover{
+    background-color: rgba(255, 217, 0, 0.938);
+}
+.card-body h5{
+    color: var(--heading);
+    transition: all 0.2s;
+
+}
+.card:hover .card-body h5  {
+    color: gold;
+}
+.card-img-top{
+    background-color: var(--background-color);
+    transition: all 0.2s;
+    width: 100%;
+}
+.card{
+    overflow: hidden;
+}
+.card:hover .card-img-top{
+    transform: scale(1.1);
+}
+.Shoy{
+    font-family: "Rammetto One", sans-serif;
+}
+.skil-text h3{
+    font-family: "Rammetto One", sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--heading);
+}
+
+
