@@ -1,90 +1,106 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
+
+const stats = [
+    { value: "12+", label: "Years of Experience" },
+    { value: "97+", label: "Completed Projects" },
+    { value: "81+", label: "Happy Clients" },
+    { value: "53+", label: "Awards Won" },
+];
+
 export default function About() {
-    const Skill = [
-        { name: "HTML", level: "90%" },
-        { name: "CSS", level: "70%" },
-        { name: "Bootstrap", level: "80%" },
-        { name: "JavaScript", level: "70%" },
-        { name: "React.Js", level: "80%" },
-        { name: "Node.Js", level: "80%" }
-
-    ];
-
     return (
         <div className="container-fluid">
+
+            {/* ── Heading ── */}
             <div className="Heading-Text text-center">
                 <h1>Resume</h1>
                 <h2>About <span className="me">ME</span></h2>
             </div>
 
-            <div className="main-content h-100">
+            {/* ── Personal Info ── */}
+            <div className="main-content">
                 <h3 className="text-center mt-4">Personal Info</h3>
 
-                <div className="row main-content-box">
-                    <div className="col-12 col-md-6 p-5 m-auto">
-                        <ul className="list-unstyled">
-                            <li><p>First Name: <b>Muhammad</b></p></li>
-                            <li><p>Age: <b>22 Years</b></p></li>
-                            <li><p>Freelance: <b>Available</b></p></li>
-                            <li><p>Phone: <b>+3267852678</b></p></li>
-                            <li><p>Skype: <b>No</b></p></li>
-                        </ul>
-                    </div>
+                <div className="row main-content-box px-3 py-4 g-4">
                     <div className="col-12 col-md-6">
-                        <ul className="list-unstyled">
-                            <li><p>Last Name: <b>Shakir</b></p></li>
-                            <li><p>Nationality: <b>Pakistani</b></p></li>
-                            <li><p>Address: <b>Punjab</b></p></li>
-                            <li><p>Email: <b>muhammad.shakir.ahmadani@gmail.com</b></p></li>
-                            <li><p>Languages: <b>French, English,Urdu</b></p></li>
-                        </ul>
+                        <div className="info-card">
+                            <ul className="list-unstyled mb-0">
+                                <li className="info-item">
+                                    <span className="info-label">First Name</span>
+                                    <span className="info-value">Muhammad</span>
+                                </li>
+                                <li className="info-item">
+                                    <span className="info-label">Age</span>
+                                    <span className="info-value">22 Years</span>
+                                </li>
+                                <li className="info-item">
+                                    <span className="info-label">Freelance</span>
+                                    <span className="info-value available">
+                                        <span className="available-dot" /> Available
+                                    </span>
+                                </li>
+                                <li className="info-item">
+                                    <span className="info-label">Phone</span>
+                                    <span className="info-value">+3267852678</span>
+                                </li>
+                                <li className="info-item">
+                                    <span className="info-label">Skype</span>
+                                    <span className="info-value">No</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="col-12 col-md-6">
+                        <div className="info-card">
+                            <ul className="list-unstyled mb-0">
+                                <li className="info-item">
+                                    <span className="info-label">Last Name</span>
+                                    <span className="info-value">Shakir</span>
+                                </li>
+                                <li className="info-item">
+                                    <span className="info-label">Nationality</span>
+                                    <span className="info-value">Pakistani</span>
+                                </li>
+                                <li className="info-item">
+                                    <span className="info-label">Address</span>
+                                    <span className="info-value">Punjab, Pakistan</span>
+                                </li>
+                                <li className="info-item">
+                                    <span className="info-label">Email</span>
+                                    <span className="info-value info-email">
+                                        muhammad.shakir.ahmadani@gmail.com
+                                    </span>
+                                </li>
+                                <li className="info-item">
+                                    <span className="info-label">Languages</span>
+                                    <span className="info-value">English, Urdu</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
-                <div className="year row my-5">
-                    <div className="col-12 col-md-3 col-lg-6 mb-3">
-                        <div className="card text-center p-3">
-                            <h1>12+</h1>
-                            <p>Years of Experience</p>
+                {/* ── Stats Cards ── */}
+                <div className="row justify-content-center my-5 px-3">
+                    {stats.map((stat, index) => (
+                        <div key={index} className="col-6 col-md-4 col-lg-6 mb-3">
+                            <div className="card text-center p-3">
+                                <h1>{stat.value}</h1>
+                                <p>{stat.label}</p>
+                            </div>
                         </div>
-                    </div>
-                    <div className="col-12 col-md-3 col-lg-6 mb-3">
-                        <div className="card text-center ">
-                            <h1>97+</h1>
-                            <p>Completed Projects</p>
-                        </div>
-                    </div>
-                    <div className="col-12 col-md-3 col-lg-6 mb-3">
-                        <div className="card text-center ">
-                            <h1>81+</h1>
-                            <p>Happy Clients</p>
-                        </div>
-                    </div>
-                    <div className="col-12 col-md-3 col-lg-6">
-                        <div className="card text-center p-3">
-                            <h1>53+</h1>
-                            <p>Awards Won</p>
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </div>
 
-            <div className="skil-text">
-                <h3 className="text-center">Skills</h3>
-            </div>
+            {/* ── Skills ── */}
+          
 
-            <div className="skills ">
-                {Skill.map((skill, index) => (
-                    <div key={index} className="col-12 col-md-6 col-lg-4">
-                        <div className="border123">
-                            <p >{skill.name}</p>
-                            <p >{skill.level}</p>
-                        </div>
-                    </div>
-                ))}
-            </div>
+           
         </div>
     );
 }

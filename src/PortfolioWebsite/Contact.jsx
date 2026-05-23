@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaFacebook, FaLinkedin, FaGithub } from 'react-icons/fa';
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',
@@ -46,8 +46,8 @@ export default function Contact() {
   };
 
   return (
-    <div className="container-fluid p-5">
-          <h2 className=" heading text-center mb-4">Contact <span style={{color:"gold"}}>Us</span></h2>
+    <div className="container-fluid p-5 h-auto">
+      <h2 className=" heading text-center mb-4">Contact <span style={{ color: "gold" }}>Us</span></h2>
       <div className="row justify-content-center">
         <div className="Detail col-md-8 col-lg-6 col-12  p-4 shadow-sm mt-5">
           <h1 className="Shoy mb-4 text-warning">Don't be shy!</h1>
@@ -58,13 +58,13 @@ export default function Contact() {
             <h5>
               <FaMapMarkerAlt className="me-2 text-primary" /> Address Point
             </h5>
-            <p>P/O MuhammadPur,Tehsil Jmapur,District Rajanpur</p>
+            <p>Model Town, Lahore</p>
           </div>
           <div className="email mb-4">
             <h5>
               <FaEnvelope className="me-2 text-primary" /> Mail Me
             </h5>
-            <p>mshakir7809797@gmail.com</p>
+            <p>muhammad.shakir.ahmadani@gmail.com</p>
           </div>
           <div className="contact mb-4">
             <h5>
@@ -78,21 +78,18 @@ export default function Contact() {
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-primary">
                 <FaFacebook size={30} />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-info">
-                <FaTwitter size={30} />
-              </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-primary">
+              <a href="https://www.linkedin.com/in/muhammad-shakir-2a8242264/" target="_blank" rel="noopener noreferrer" className="text-primary">
                 <FaLinkedin size={30} />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-danger">
-                <FaInstagram size={30} />
+              <a href="https://github.com/MShakir7852" target="_blank" rel="noopener noreferrer" className="text-dark">
+                <FaGithub size={30} />
               </a>
             </div>
           </div>
 
         </div>
         <div className="col-md-8 col-lg-6 col-12">
-          
+
           {submitted && <div className="alert alert-success">Thank you for contacting us!</div>}
           <form onSubmit={handleSubmit} className='Form'>
             <div className="mb-3">

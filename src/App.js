@@ -3,9 +3,9 @@ import Home from './PortfolioWebsite/Home';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Nav from './PortfolioWebsite/Nav';
 import About from './PortfolioWebsite/About';
-import Portfolio from './PortfolioWebsite/Portfolio';
+import Projects from './PortfolioWebsite/Project';
 import Contact from './PortfolioWebsite/Contact';
-import Blog from './PortfolioWebsite/Blog';
+import Skills from './PortfolioWebsite/Skills';
 import "./PortfolioWebsite/Home.css"
 
 export default function App() {
@@ -17,9 +17,9 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About/>} />
-          <Route path="/portfolio" element={<Portfolio/>}/>
+          <Route path="/Project" element={<Projects/>}/>
           <Route path="/contact" element={<Contact/>} />
-          <Route path="/blog" element={<Blog/>} />
+          <Route path="/Skills" element={<Skills/>} />
         </Routes>
       </div>
     </Router>

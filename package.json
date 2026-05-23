@@ -1,5 +1,5 @@
 {
-  "homepage": "https://MShakir7852.github.io/Portfolio",
+  "homepage": ".",
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -17,12 +17,12 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
+ "scripts": {
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "predeploy": "npm run build",
+  "deploy": "your deploy command here"
+},
   "eslintConfig": {
     "extends": [
       "react-app",
