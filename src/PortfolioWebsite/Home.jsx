@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { FaArrowRight, FaDownload } from 'react-icons/fa';
 import pic from "../PortfolioWebsite/Image/WhatsApp Image 2026-05-13 at 8.56.11 PM.jpeg";
-import resumePDF from "./Shakir-Mernstack.pdf";
+import resumePDF from "../PortfolioWebsite/Muhammad_Shakir_CV.pdf";
 import './Home.css';
+import { Link } from 'react-router-dom';
 
 export default class Home extends Component {
     render() {
@@ -34,14 +35,25 @@ export default class Home extends Component {
                             experiences using React, Node.js, Express, and MongoDB.
                         </p>
 
-                        {/* ── Button Row ── */}
+
                         <div className="home-btn-row">
 
-                            {/* About Me */}
-                            <div className="aboutbtn d-flex align-items-center">
-                                <button className="btn btn-primary me-2">About Me</button>
-                                <FaArrowRight className="Icon" />
-                            </div>
+
+
+                            <Link
+                                to='/about'
+                                className="home-resume-btn"
+                            >
+                                <span className="home-resume-btn-inner">
+                                    <span className='px-3'>About Me</span>
+                                    <FaArrowRight className="Icon pr-3home-resume-icon"
+                                    />
+
+
+                                </span>
+
+                            </Link>
+                           <br />
 
                             {/* Resume Download */}
                             <a

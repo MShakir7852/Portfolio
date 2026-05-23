@@ -1,33 +1,38 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import pics from '../PortfolioWebsite/Image/image.png'
+import todaopic from "../PortfolioWebsite/Image/todoapp.png"
+import Skillnax from "../PortfolioWebsite/Image/skillnax.png"
 import { FaGithub } from 'react-icons/fa';
 
 export default function Project() {
   const projects = [
     {
-      id: 4,
+      id: 1,
       urlImag: `${pics}`,
       type: "Music Player Project",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, eaque.",
-      // category: "Graphic Design",
+      description: "Technologies: HTML, CSS, JavaScript — Created a responsive music player with play, pause, next, and previous controls, implemented dynamic audio handling using JavaScript, and designed a clean and modern user interface.",
       Github_Link: "https://github.com/MShakir7852/MusicPlayer",
       live_Demo: "https://musicplayer-tan-one.vercel.app/"
     },
     {
-      id: 6,
-      urlImag: "https://tunis-nextjs.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fproject-5.9d9c9e19.jpg&w=1920&q=75",
-      type: "Logo",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, eaque.",
-      category: "Logo"
+     id: 2,
+      urlImag: `${todaopic}`,
+      type: "Todo Full stack Mern App",
+      description: "Developed a full stack Todo Application with CRUD functionality using Node.js, Express.js, and MongoDB, built REST APIs for task management, integrated a responsive and user-friendly UI, and implemented efficient database operations for storing and managing tasks.",
+      Github_Link: "https://github.com/MShakir7852/Todo-application",
+      live_Demo: "https://musicplayer-tan-one.vercel.app/"
     },
     {
-      id: 7,
-      urlImag: "https://tunis-nextjs.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fproject-6.97d38976.jpg&w=1920&q=75",
-      type: "Logo",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, eaque. lorem",
-      category: "Logo"
+      id: 3,
+      urlImag: `${Skillnax}`,
+      type: "SkillNax Mern Website",
+      description: "Technologies: HTML, CSS, JavaScript, React.js — Developed a responsive educational website with admin dashboard features, built interactive UI components and dashboard layouts, and improved user experience with responsive design and smooth navigation.",
+      Github_Link: "https://github.com/MShakir7852/SkillNax",
+      live_Demo: "https://musicplayer-tan-one.vercel.app/"
     }
+    
+     
   ];
 
 

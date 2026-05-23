@@ -4,10 +4,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const stats = [
-    { value: "12+", label: "Years of Experience" },
-    { value: "97+", label: "Completed Projects" },
-    { value: "81+", label: "Happy Clients" },
-    { value: "53+", label: "Awards Won" },
+    { value: "Fresher", label: "Years of Experience" },
+    { value: "3+", label: "Completed Projects" },
+    { value: "10", label: "Happy Clients" },
+    { value: "3+", label: "Awards Won" },
 ];
 
 export default function About() {

@@ -354,16 +354,20 @@ body {
 
 .row .card {
     border-color: var(--para);
+     color:var(--heading);
+    background-color: (var(--background-color));
 }
 
 .card h1 {
-    color: gold;
+    /* color:var(--heading); */
     font-size: clamp(24px, 5vw, 40px);
+  
 }
 
 .card p {
     font-size: clamp(12px, 2vw, 16px);
     text-align: center;
+     color:var(--para)
 }
 
 .card-body h5 {
@@ -372,7 +376,7 @@ body {
 }
 
 .card:hover .card-body h5 {
-    color: gold;
+    color:var(--para);
 }
 
 .card-img-top {
@@ -534,7 +538,7 @@ body {
     font-family: "Rowdies", sans-serif;
     font-size: 13px;
     font-weight: 600;
-    color: gold;
+    color:(var(--heading));
     text-transform: uppercase;
     letter-spacing: 0.8px;
     white-space: nowrap;
