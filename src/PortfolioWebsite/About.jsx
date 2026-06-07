@@ -83,9 +83,9 @@ export default function About() {
                     </div>
                 </div>
 
-                <div className=" statecontent row justify-content-center">
+                <div className=" statecontent row justify-content-center g-2">
                     {stats.map((stat, index) => (
-                        <div key={index} className="col-6 col-md-4 col-lg-6 mb-3">
+                        <div key={index} className="col-6 col-md-4 col-lg-6">
                             <div className="card text-center p-3">
                                 <h1>{stat.value}</h1>
                                 <p>{stat.label}</p>

@@ -81,6 +81,7 @@ body {
     padding: 10px 20px;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
 }
 
 /* ══════════════════════════════════════
@@ -715,6 +716,8 @@ body {
     font-weight: bold;
 }
 
+
+
 .Form label {
     color: var(--heading);
 }
@@ -1083,7 +1086,9 @@ body {
         font-size: 100px;
         border-radius: 10px;
     }
-
+.portfolio .row{
+    margin:0;
+}
     .theme-toggle { width: 36px; height: 36px; font-size: 15px; }
     .nav-tooltip  { display: none; }
 
@@ -1124,10 +1129,16 @@ body {
     .info-card  { padding: 20px 18px; }
     .info-label { font-size: 11px; }
     .info-value { font-size: 13px; }
+
+
+
+ 
+.portfolio .row{
+    margin:0;
+}
 }
 
-
-    .description {
+   .description {
   display: -webkit-box;
   -webkit-line-clamp: 2;   
   -webkit-box-orient: vertical;

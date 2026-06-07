@@ -37,12 +37,12 @@ export default function Project() {
 
 
   return (
-    <div className="portfolio">
+    <div className="portfolio w-100">
       <h1 className="text-center mb-4">
         My <span style={{ color: "gold" }}>Projects</span>
       </h1>
 
-      <div className="row g-4 justify-content-center">
+      <div className=" row g-4 justify-content-center w-100">
         {projects.map((item) => (
           <div className="col-12 col-md-6 col-lg-4 d-flex" key={item.id}>
 
