@@ -6,6 +6,7 @@ import './Home.css';
 import { Link } from 'react-router-dom';
 import About from './About';
 import Project from './Project';
+import Contact from './Contact';
 
 export default class Home extends Component {
     render() {
@@ -79,6 +80,7 @@ export default class Home extends Component {
             
                 <About/>
                 <Project/>
+                <Contact/>
             </>
         );
     }
