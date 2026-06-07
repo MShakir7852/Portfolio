@@ -308,6 +308,8 @@ body {
 ══════════════════════════════════════ */
 
 .main-content {
+    height: auto;
+    /* background-color: #22c55e; */
     width: 100%;
     background-color: var(--background-color);
     padding-bottom: 40px;
@@ -338,7 +340,8 @@ body {
 ══════════════════════════════════════ */
 
 .card {
-    min-height: 120px;
+    /* min-height: 120px; */
+    height: auto;
     padding: 20px 15px;
     border: 1px solid var(--borders);
     background-color: var(--background-color);
@@ -538,7 +541,7 @@ body {
     font-family: "Rowdies", sans-serif;
     font-size: 13px;
     font-weight: 600;
-    color: white;
+    color:var(--p);
     text-transform: uppercase;
     letter-spacing: 0.8px;
     white-space: nowrap;

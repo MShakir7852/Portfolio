@@ -12,16 +12,15 @@ const stats = [
 
 export default function About() {
     return (
-        <div className="container-fluid">
+        <div className="container-fluid h-auto">
 
-            {/* ── Heading ── */}
             <div className="Heading-Text text-center">
                 <h1>Resume</h1>
                 <h2>About <span className="me">ME</span></h2>
             </div>
 
-            {/* ── Personal Info ── */}
-            <div className="main-content">
+    
+            <div className="main-content h-auto">
                 <h3 className="text-center mt-4">Personal Info</h3>
 
                 <div className="row main-content-box px-3 py-4 g-4">
@@ -84,7 +83,7 @@ export default function About() {
                     </div>
                 </div>
 
-                <div className="row justify-content-center my-5 px-3">
+                <div className=" statecontent row justify-content-center">
                     {stats.map((stat, index) => (
                         <div key={index} className="col-6 col-md-4 col-lg-6 mb-3">
                             <div className="card text-center p-3">
