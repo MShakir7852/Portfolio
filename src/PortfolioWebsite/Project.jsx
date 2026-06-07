@@ -37,7 +37,7 @@ export default function Project() {
 
 
   return (
-    <div className="portfolio mt-5 ">
+    <div className="portfolio">
       <h1 className="text-center mb-4">
         My <span style={{ color: "gold" }}>Projects</span>
       </h1>
