@@ -4,10 +4,13 @@ import pic from "../PortfolioWebsite/Image/WhatsApp Image 2026-05-13 at 8.56.11 
 import resumePDF from "../PortfolioWebsite/Muhammad_Shakir_CV.pdf";
 import './Home.css';
 import { Link } from 'react-router-dom';
+import About from './About';
+import Project from './Project';
 
 export default class Home extends Component {
     render() {
         return (
+            <>
             <div className="container-fluid HomePage">
                 <div className="row">
 
@@ -73,6 +76,10 @@ export default class Home extends Component {
 
                 </div>
             </div>
+            
+                <About/>
+                <Project/>
+            </>
         );
     }
 }
