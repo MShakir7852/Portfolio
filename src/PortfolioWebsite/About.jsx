@@ -84,7 +84,6 @@ export default function About() {
                     </div>
                 </div>
 
-                {/* ── Stats Cards ── */}
                 <div className="row justify-content-center my-5 px-3">
                     {stats.map((stat, index) => (
                         <div key={index} className="col-6 col-md-4 col-lg-6 mb-3">
@@ -96,8 +95,6 @@ export default function About() {
                     ))}
                 </div>
             </div>
-
-            {/* ── Skills ── */}
           
 
            
